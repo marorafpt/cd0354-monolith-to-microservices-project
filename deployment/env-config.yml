@@ -1,0 +1,14 @@
+kind: ConfigMap 
+apiVersion: v1 
+metadata:
+  name: udagram-configmap 
+data:
+  # Configuration values can be set as key-value properties
+ POSTGRES_HOST: database-1.cqtgye8wqq9h.us-east-1.rds.amazonaws.com
+ POSTGRES_DB: postgres
+ AWS_BUCKET: arn:aws:s3:::refactor-258712747903-dev
+ AWS_REGION: us-east-1
+ AWS_PROFILE: default
+ JWT_SECRET: testing
+ URL: http://localhost:8100
+ NODE_OPTIONS: --openssl-legacy-provider
