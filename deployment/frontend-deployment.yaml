@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: marorafpt/udagram-frontend:v2	
+        image: marorafpt/udagram-frontend:v3	
         ports:
         - containerPort: 8080

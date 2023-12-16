@@ -1,7 +1,7 @@
 kind: ConfigMap 
 apiVersion: v1 
 metadata:
-  name: udagram-configmap 
+  name: env-config 
 data:
   # Configuration values can be set as key-value properties
  POSTGRES_HOST: database-1.cqtgye8wqq9h.us-east-1.rds.amazonaws.com

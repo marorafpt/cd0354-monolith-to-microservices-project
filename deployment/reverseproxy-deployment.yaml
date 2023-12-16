@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: reverseproxy
   labels:
     app: reverseproxy
+  name: reverseproxy
 spec:
   replicas: 2
   selector:
@@ -15,7 +15,9 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - name: reverseproxy
-        image: marorafpt/reverseproxy:v2	
+      - image: marorafpt/reverseproxy:v2
+        name: reverseproxy
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
+      restartPolicy: Always
